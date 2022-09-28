@@ -1,5 +1,5 @@
+/* configurações Padrão */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap');
-
 *{
     font-family: 'Merriweather Sans', sans-serif;
 }
@@ -11,96 +11,118 @@
     --bg-photo: #00FF00;
 }
 body{
-    background: var(--body-bg-color);
-    display: flex;
-    gap: 2rem;
-    width: 1500px;
+    border: 1px solid red;
+    background: var(--body-bg-color);    
     margin: 2em auto;
+    width: 1250px;
+    display: flex;
+    gap: .6rem;
 }
 main{
     flex-basis: 25%;
-    display: flex;
-    flex-direction: column;
-    gap: .8rem;
 }
 aside{
     flex: 1;
 }
 .card{
     background-color: var(--bg-cards);
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+h2, h5, p{
+    color: var(--text-color);
+}
+/* Fim das configurações Padrão */
+.photo{
     display: flex;
-    align-items: center;
-    overflow: hidden;
     flex-direction: column;
-    justify-content: center;
-    border-radius: 5%;
+    align-items: center;
+    padding: 20px 0;
 }
 #bg{
     border: 2px solid var(--bg-photo);
     width: 120px;
     height: 120px;
-    margin-top: 40px;
     border-radius: 100%;
 }
 #bg img{
     border-radius: 100%;
     width: 119px;
 }
-h2,
-h5{
-    color: var(--text-color);
-}
-h2{
+.photo>h2{
     font-size: 1.2em;
-    margin-top: 40px;
+    margin-top: 20px;
 }
-h5{
+.photo>h5{
     margin-top: -15px;
     font-size: .6em;
 }
 .profile{
-    display: block;
-    padding: 15px 0;
-}
-a{
-    text-decoration: none;
-    color: var(--text-color);
+    padding: 20px 0;
 }
 .info{
-    margin: 10px 0;
-    margin-left: 40px;
+    margin: 0 20px;
+    padding: 5px 0;
     display: flex;
-    gap: 1.4rem;
+    gap: 1rem;
 }
-.info svg{
+.info>svg{
     fill: var(--text-color);
     height: 18px;
     width: 18px;
 }
-.info a{
+.info>a{
     font-size: 9pt;
-    line-height: 20px;
-    margin-left: -5px;
-}
-#masterskills{
-    gap: .8rem;
-    display: flex;
-    flex-wrap: wrap;
-    width: 285px;
-    height: 130px;
-    margin-bottom: 30px;
 }
 #topskill>h2{
-    margin-left: -160px;
-    margin-bottom: 30px;
+    margin: 5px;
+    padding: 15px;
 }
 .skills{
-    width: 86px;
-    height: 25px;
+    background-color: var(--bg-techs);
+    width: 85px;
+    height: 20px;
     font-size: .7em;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    background-color: var(--bg-techs);
+    border-radius: 9px;
+}
+#masterskills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+    margin: 0 13px;
+    padding-bottom: 30px;
+}
+.fixedbox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+    margin-bottom: 40px;
+}
+.fixedbox div:nth-child(1){
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.fixedbox div:nth-child(2),
+.fixedbox div:nth-child(3){
+    flex: 1;
+    height: 100px;
+    margin-top: -8px;
+}
+.fixedbox h2{
+    font-size: 1rem;
+}
+.fixedbox a{
+    display: flex;
+    align-items: center;
+    font-size: .6rem;
+    padding-right: 30px;
 }
